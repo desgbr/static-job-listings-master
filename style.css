@@ -1,0 +1,104 @@
+:root {
+  --primary: hsl(180, 29%, 50%);
+  --light-cyan: hsl(180, 52%, 96%);
+  --light-cyan-filter: hsl(180, 31%, 95%);
+  --Dark-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Cyan: hsl(180, 14%, 20%);
+  --dark: #293734;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  background: var(--light-cyan);
+  font-family: 'Spartan', sans-serif;
+}
+
+/* global styles */
+.new,
+.features {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--light-cyan);
+  padding: 7px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.new {
+  background: var(--primary);
+}
+
+.features {
+  background: var(--dark);
+}
+
+header {
+  background: url("images/bg-header-desktop.svg"), var(--primary);
+  height: 155px;
+  margin-bottom: 75px;
+}
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.job {
+  width: 1100px;
+  background: #FFF;
+  height: 150px;
+  border-radius: 5px;
+  border-left: 5px solid var(--primary);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.job-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35px;
+}
+
+.details,
+h2{
+  margin-left: 25px;
+}
+
+.job-heading .title{
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: capitalize;
+}
+
+.job-heading,
+.job-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
